@@ -16,19 +16,4 @@ struct Links : Codable, Hashable {
 	let rel : String?
 	let href : String?
 	let render : String?
-
-	enum CodingKeys: String, CodingKey {
-
-		case rel = "rel"
-		case href = "href"
-		case render = "render"
-	}
-
-	init(from decoder: Decoder) throws {
-		let values = try decoder.container(keyedBy: CodingKeys.self)
-		rel = try values.decodeIfPresent(String.self, forKey: .rel)
-		href = try values.decodeIfPresent(String.self, forKey: .href)
-		render = try values.decodeIfPresent(String.self, forKey: .render)
-	}
-
 }
