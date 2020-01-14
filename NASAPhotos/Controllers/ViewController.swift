@@ -102,19 +102,6 @@ class ViewController: UIViewController, UICollectionViewDelegate {
         cell.backgroundColor = .white
         return cell
     }
-//    //TODO: DO you really need this one?
-//    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-//        //let photo = items[indexPath.row]
-//        let collViewCell = cell as! PhotoCell
-//        //collViewCell.avatarImageView.image = UIImage(data: URL(string: photo.href)
-//       // var url = photo.links?[indexPath.row].href ?? "N/A"
-//
-//        //TODO: configCollViewCellImage here
-//        performUpdatesOnMain {
-//           // self.configImage(url: url, cell: collViewCell)
-//            //self.configImage(cell: collViewCell, photo: photo, collectionView: collectionView, indexPath: indexPath)
-//        }
-//    }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: view.frame.width, height: view.frame.height)

@@ -13,7 +13,6 @@ let cachedImages = NSCache<NSString, UIImage>()
 extension UIImageView {
     
     func loadImageUsingCacheWithUrlString(urlString:String) {
-        
         self.image = nil
         var encodedURLString = urlString.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed) ?? ""
     

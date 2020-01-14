@@ -17,8 +17,7 @@ class NetworkManager {
     private init() {}
     
     
-    func getItemsData(page: Int, completed: @escaping (Result<[Items], CustomError>) -> Void) {
-        
+    func getItemsData(page: Int, completed: @escaping (Result<[Items], CustomError>) -> Void) {        
         let endpoint = baseURL + "search?q=images&page=\(page)"
         
         guard let url = URL(string: endpoint) else {
@@ -58,7 +57,6 @@ class NetworkManager {
     }
     
     func getImage(urlString: String, completed: @escaping (_ results: Data?,_ error:NSError?) -> ()){
-        
         do{
             var encodedURLString = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
             var url = URL(string: encodedURLString!)

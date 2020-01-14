@@ -10,7 +10,6 @@ import Foundation
 import UIKit
 
 class DetailVC: UIViewController {
-    //var items = [Items]()
     var item: Items?
     var imageUrl = ""
     var navTitle = ""

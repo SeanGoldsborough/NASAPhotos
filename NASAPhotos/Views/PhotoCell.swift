@@ -7,7 +7,6 @@
 //
 
 import Foundation
-
 import UIKit
 
 class PhotoCell: UICollectionViewCell {
@@ -36,7 +35,6 @@ class PhotoCell: UICollectionViewCell {
     }
     
     override var isHighlighted: Bool {
-        
         didSet{
             var transform = CGAffineTransform.identity
             if isHighlighted {

@@ -31,7 +31,6 @@ class ItemImageView: UIImageView {
     }
     
     func downloadImage(from urlString: String) {
-        
         let cacheKey = NSString(string: urlString)
         
         if let image = cache.object(forKey: cacheKey) {
