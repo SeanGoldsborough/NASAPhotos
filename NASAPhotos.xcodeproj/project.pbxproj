@@ -32,6 +32,7 @@
 		41B9742B23CBEF6300C60674 /* FlowLayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B9742A23CBEF6300C60674 /* FlowLayoutHelper.swift */; };
 		41B9742D23CCCD2500C60674 /* UIImageView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B9742C23CCCD2500C60674 /* UIImageView+Ext.swift */; };
 		41B9743323CD21F300C60674 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B9743223CD21F300C60674 /* AlertView.swift */; };
+		41F7E56823CDFFB9008432FF /* Nasa.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41F7E56723CDFFB9008432FF /* Nasa.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		41B9742A23CBEF6300C60674 /* FlowLayoutHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayoutHelper.swift; sourceTree = "<group>"; };
 		41B9742C23CCCD2500C60674 /* UIImageView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Ext.swift"; sourceTree = "<group>"; };
 		41B9743223CD21F300C60674 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		41F7E56723CDFFB9008432FF /* Nasa.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Nasa.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 				41B9743023CD1A0C00C60674 /* Views */,
 				41B9742E23CD19DE00C60674 /* Controllers */,
 				41B9742F23CD19F600C60674 /* Extensions */,
+				41F7E56623CDFFA4008432FF /* Resources */,
 				41B9743523CD24CC00C60674 /* Support */,
 				41B973CB23C5DDF900C60674 /* Info.plist */,
 			);
@@ -233,6 +236,14 @@
 				41B973C623C5DDF900C60674 /* Assets.xcassets */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		41F7E56623CDFFA4008432FF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				41F7E56723CDFFB9008432FF /* Nasa.ttf */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,6 +353,7 @@
 				41B973CA23C5DDF900C60674 /* LaunchScreen.storyboard in Resources */,
 				41B973C723C5DDF900C60674 /* Assets.xcassets in Resources */,
 				41B973C223C5DDF800C60674 /* Main.storyboard in Resources */,
+				41F7E56823CDFFB9008432FF /* Nasa.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

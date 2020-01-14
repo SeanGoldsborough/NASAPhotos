@@ -37,8 +37,12 @@ class ViewController: UIViewController, UICollectionViewDelegate {
         collectionView?.backgroundColor = .blue
         collectionView.collectionViewLayout = FlowLayoutHelper.createThreeColumnFlowLayout(in: self.view)
         
-        navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.title = "NASA Photos"
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationBar.largeTitleTextAttributes =
+            [NSAttributedString.Key.foregroundColor: UIColor.blue,
+             NSAttributedString.Key.font: UIFont(name: "Nasa", size: 40) ??
+                                     UIFont.systemFont(ofSize: 40)]
         
         performUpdatesOnMain {
             self.activityIndicator.startAnimating()
