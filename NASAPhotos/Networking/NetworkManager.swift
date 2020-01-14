@@ -11,20 +11,16 @@ import UIKit
 
 class NetworkManager {
     static let shared   = NetworkManager()
-    let baseURL = "https://images-api.nasa.gov/"
+    let baseURL = "https://images-api.nasa.gov"
     let cache = NSCache<NSString, UIImage>()
     
     private init() {}    
     
-    func getItemsData(page: Int, completed: @escaping (Result<[Items], CustomError>) -> Void) {        
-        let endpoint = baseURL + "search?q=images&page=\(page)"
-        
-        guard let url = URL(string: endpoint) else {
-            completed(.failure(.badConnection))
-            return
-        }
-        
-        let request = URLRequest(url: url, cachePolicy: .useProtocolCachePolicy, timeoutInterval: 10)
+    func getItemsData(page: Int, completed: @escaping (Result<[Items], CustomError>) -> Void) {
+       
+        var parameters = ["q": "images", "page" : "\(page)"]
+        var endpoint = NetworkManager.shared.URLFromParameters(parameters as [String : AnyObject])
+        let request = URLRequest(url: endpoint, cachePolicy: .useProtocolCachePolicy, timeoutInterval: 10)
         
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             

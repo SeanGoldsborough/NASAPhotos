@@ -166,9 +166,9 @@
 		41B9742223C6174C00C60674 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				41B9741823C5EC4000C60674 /* Items.swift */,
 				41B9741A23C5ED0D00C60674 /* Base.swift */,
 				41B9741C23C5EE2500C60674 /* Collection.swift */,
+				41B9741823C5EC4000C60674 /* Items.swift */,
 				41B9741E23C5EFB100C60674 /* Data.swift */,
 				41B9742023C5F10D00C60674 /* Links.swift */,
 				41B973C323C5DDF800C60674 /* NASAPhotos.xcdatamodeld */,

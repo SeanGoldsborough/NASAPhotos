@@ -7,12 +7,12 @@
 //
 
 import Foundation
-//extension NetworkManager {
-//    struct Constants {
-//        struct URL {
-//            static let APIScheme = "https"
-//            static let APIHost = "api.stackexchange.com"
-//            static let APIPath = "/2.2/users"
-//        }
-//    }
-//}
+extension NetworkManager {
+    struct Constants {
+        struct URL {
+            static let APIScheme = "https"
+            static let APIHost = "images-api.nasa.gov"
+            static let APIPath = "/search"
+        }
+    }
+}
