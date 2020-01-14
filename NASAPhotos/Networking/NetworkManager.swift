@@ -14,14 +14,13 @@ class NetworkManager {
     let baseURL = "https://images-api.nasa.gov/"
     let cache = NSCache<NSString, UIImage>()
     
-    private init() {}
-    
+    private init() {}    
     
     func getItemsData(page: Int, completed: @escaping (Result<[Items], CustomError>) -> Void) {        
         let endpoint = baseURL + "search?q=images&page=\(page)"
         
         guard let url = URL(string: endpoint) else {
-            completed(.failure(.invalidUsername))
+            completed(.failure(.badConnection))
             return
         }
         
