@@ -16,16 +16,13 @@ extension UIImageView {
         
         self.image = nil
         var encodedURLString = urlString.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed) ?? ""
-        print("encodedURLString:", encodedURLString)
     
         if let cacheImage = cachedImages.object(forKey: urlString as NSString)  {
-            print("Fetching profile image from cache...")
             self.image = cacheImage
             return
         }
         
         let url = URL(string: encodedURLString)
-        print("url:", url)
         let request = URLRequest(url: url!, cachePolicy: .useProtocolCachePolicy, timeoutInterval: 10)
         let task = URLSession.shared.dataTask(with: request, completionHandler: { (data, response, error) in
             

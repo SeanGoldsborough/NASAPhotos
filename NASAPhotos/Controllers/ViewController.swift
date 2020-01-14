@@ -121,7 +121,6 @@ class ViewController: UIViewController, UICollectionViewDelegate {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(indexPath.item)
         self.pushDetailView(item: items[indexPath.row])
     }
     
@@ -140,7 +139,6 @@ class ViewController: UIViewController, UICollectionViewDelegate {
             guard hasMoreImages else { return }
             page += 1
             getItems(page: page)
-            print("items.count is:", items.count)
         }
     }
 }

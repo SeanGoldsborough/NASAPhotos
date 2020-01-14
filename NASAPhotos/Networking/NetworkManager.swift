@@ -18,13 +18,8 @@ class NetworkManager {
     
     
     func getItemsData(page: Int, completed: @escaping (Result<[Items], CustomError>) -> Void) {
-        print("getItemsData called")
-        let endpoint = baseURL + "search?q=images&page=\(page)"
         
-//        let url = URL(string: encodedURLString)
-//        print("url:", url)
-//        let request = URLRequest(url: url!, cachePolicy: .useProtocolCachePolicy, timeoutInterval: 3)
-//        let task = URLSession.shared.dataTask(with: request, completionHandler: { (data, response, error) in
+        let endpoint = baseURL + "search?q=images&page=\(page)"
         
         guard let url = URL(string: endpoint) else {
             completed(.failure(.invalidUsername))
@@ -54,7 +49,6 @@ class NetworkManager {
                 let decoder = JSONDecoder()
                 decoder.keyDecodingStrategy = .convertFromSnakeCase
                 let photoItems = try decoder.decode(Base.self, from: data)
-                print(photoItems.collection?.items)
                 completed(.success(((photoItems.collection?.items)!)))
             } catch {
                 completed(.failure(.invalidData))
