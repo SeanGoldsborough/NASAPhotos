@@ -9,13 +9,29 @@
 /* Begin PBXBuildFile section */
 		41B973BB23C5DDF800C60674 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B973BA23C5DDF800C60674 /* AppDelegate.swift */; };
 		41B973BD23C5DDF800C60674 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B973BC23C5DDF800C60674 /* SceneDelegate.swift */; };
-		41B973BF23C5DDF800C60674 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B973BE23C5DDF800C60674 /* ViewController.swift */; };
 		41B973C223C5DDF800C60674 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41B973C023C5DDF800C60674 /* Main.storyboard */; };
 		41B973C523C5DDF800C60674 /* NASAPhotos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 41B973C323C5DDF800C60674 /* NASAPhotos.xcdatamodeld */; };
 		41B973C723C5DDF900C60674 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41B973C623C5DDF900C60674 /* Assets.xcassets */; };
 		41B973CA23C5DDF900C60674 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41B973C823C5DDF900C60674 /* LaunchScreen.storyboard */; };
 		41B973D523C5DDF900C60674 /* NASAPhotosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B973D423C5DDF900C60674 /* NASAPhotosTests.swift */; };
 		41B973E023C5DDFA00C60674 /* NASAPhotosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B973DF23C5DDFA00C60674 /* NASAPhotosUITests.swift */; };
+		41B973F023C5DE6500C60674 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B973EF23C5DE6500C60674 /* PhotoCell.swift */; };
+		41B973F223C5DE6D00C60674 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B973F123C5DE6D00C60674 /* NetworkManager.swift */; };
+		41B973F423C5DEAD00C60674 /* ErrorMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B973F323C5DEAC00C60674 /* ErrorMessages.swift */; };
+		41B973F623C5DEFE00C60674 /* ItemImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B973F523C5DEFE00C60674 /* ItemImageView.swift */; };
+		41B973FA23C5E38E00C60674 /* GCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B973F923C5E38E00C60674 /* GCD.swift */; };
+		41B9740923C5E7B100C60674 /* URLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B9740823C5E7B100C60674 /* URLBuilder.swift */; };
+		41B9740B23C5E7D500C60674 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B9740A23C5E7D500C60674 /* Constants.swift */; };
+		41B9741923C5EC4000C60674 /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B9741823C5EC4000C60674 /* Items.swift */; };
+		41B9741B23C5ED0D00C60674 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B9741A23C5ED0D00C60674 /* Base.swift */; };
+		41B9741D23C5EE2500C60674 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B9741C23C5EE2500C60674 /* Collection.swift */; };
+		41B9741F23C5EFB100C60674 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B9741E23C5EFB100C60674 /* Data.swift */; };
+		41B9742123C5F10D00C60674 /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B9742023C5F10D00C60674 /* Links.swift */; };
+		41B9742723C624AC00C60674 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B9742623C624AC00C60674 /* DetailVC.swift */; };
+		41B9742923CB9A0500C60674 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B9742823CB9A0500C60674 /* ViewController.swift */; };
+		41B9742B23CBEF6300C60674 /* FlowLayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B9742A23CBEF6300C60674 /* FlowLayoutHelper.swift */; };
+		41B9742D23CCCD2500C60674 /* UIImageView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B9742C23CCCD2500C60674 /* UIImageView+Ext.swift */; };
+		41B9743323CD21F300C60674 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B9743223CD21F300C60674 /* AlertView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +55,6 @@
 		41B973B723C5DDF800C60674 /* NASAPhotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NASAPhotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41B973BA23C5DDF800C60674 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41B973BC23C5DDF800C60674 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		41B973BE23C5DDF800C60674 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		41B973C123C5DDF800C60674 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		41B973C423C5DDF800C60674 /* NASAPhotos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NASAPhotos.xcdatamodel; sourceTree = "<group>"; };
 		41B973C623C5DDF900C60674 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +66,23 @@
 		41B973DB23C5DDFA00C60674 /* NASAPhotosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NASAPhotosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41B973DF23C5DDFA00C60674 /* NASAPhotosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAPhotosUITests.swift; sourceTree = "<group>"; };
 		41B973E123C5DDFA00C60674 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41B973EF23C5DE6500C60674 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		41B973F123C5DE6D00C60674 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		41B973F323C5DEAC00C60674 /* ErrorMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessages.swift; sourceTree = "<group>"; };
+		41B973F523C5DEFE00C60674 /* ItemImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemImageView.swift; sourceTree = "<group>"; };
+		41B973F923C5E38E00C60674 /* GCD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCD.swift; sourceTree = "<group>"; };
+		41B9740823C5E7B100C60674 /* URLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLBuilder.swift; sourceTree = "<group>"; };
+		41B9740A23C5E7D500C60674 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		41B9741823C5EC4000C60674 /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
+		41B9741A23C5ED0D00C60674 /* Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
+		41B9741C23C5EE2500C60674 /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		41B9741E23C5EFB100C60674 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		41B9742023C5F10D00C60674 /* Links.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
+		41B9742623C624AC00C60674 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		41B9742823CB9A0500C60674 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		41B9742A23CBEF6300C60674 /* FlowLayoutHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayoutHelper.swift; sourceTree = "<group>"; };
+		41B9742C23CCCD2500C60674 /* UIImageView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Ext.swift"; sourceTree = "<group>"; };
+		41B9743223CD21F300C60674 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +133,14 @@
 		41B973B923C5DDF800C60674 /* NASAPhotos */ = {
 			isa = PBXGroup;
 			children = (
-				41B973BA23C5DDF800C60674 /* AppDelegate.swift */,
-				41B973BC23C5DDF800C60674 /* SceneDelegate.swift */,
-				41B973BE23C5DDF800C60674 /* ViewController.swift */,
-				41B973C023C5DDF800C60674 /* Main.storyboard */,
-				41B973C623C5DDF900C60674 /* Assets.xcassets */,
-				41B973C823C5DDF900C60674 /* LaunchScreen.storyboard */,
+				41B9743523CD24CC00C60674 /* Support */,
+				41B9743123CD1C4900C60674 /* Utilities */,
+				41B9742E23CD19DE00C60674 /* Controllers */,
+				41B9742F23CD19F600C60674 /* Extensions */,
+				41B9743023CD1A0C00C60674 /* Views */,
+				41B9742323C6176300C60674 /* Networking */,
+				41B9742223C6174C00C60674 /* Models */,
 				41B973CB23C5DDF900C60674 /* Info.plist */,
-				41B973C323C5DDF800C60674 /* NASAPhotos.xcdatamodeld */,
 			);
 			path = NASAPhotos;
 			sourceTree = "<group>";
@@ -129,6 +161,78 @@
 				41B973E123C5DDFA00C60674 /* Info.plist */,
 			);
 			path = NASAPhotosUITests;
+			sourceTree = "<group>";
+		};
+		41B9742223C6174C00C60674 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				41B9741823C5EC4000C60674 /* Items.swift */,
+				41B9741A23C5ED0D00C60674 /* Base.swift */,
+				41B9741C23C5EE2500C60674 /* Collection.swift */,
+				41B9741E23C5EFB100C60674 /* Data.swift */,
+				41B9742023C5F10D00C60674 /* Links.swift */,
+				41B973C323C5DDF800C60674 /* NASAPhotos.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		41B9742323C6176300C60674 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				41B973F123C5DE6D00C60674 /* NetworkManager.swift */,
+				41B9740A23C5E7D500C60674 /* Constants.swift */,
+				41B9740823C5E7B100C60674 /* URLBuilder.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		41B9742E23CD19DE00C60674 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				41B9742823CB9A0500C60674 /* ViewController.swift */,
+				41B9742623C624AC00C60674 /* DetailVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		41B9742F23CD19F600C60674 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				41B9742C23CCCD2500C60674 /* UIImageView+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		41B9743023CD1A0C00C60674 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				41B973C823C5DDF900C60674 /* LaunchScreen.storyboard */,
+				41B973C023C5DDF800C60674 /* Main.storyboard */,
+				41B973EF23C5DE6500C60674 /* PhotoCell.swift */,
+				41B973F523C5DEFE00C60674 /* ItemImageView.swift */,
+				41B9743223CD21F300C60674 /* AlertView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		41B9743123CD1C4900C60674 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				41B9742A23CBEF6300C60674 /* FlowLayoutHelper.swift */,
+				41B973F923C5E38E00C60674 /* GCD.swift */,
+				41B973F323C5DEAC00C60674 /* ErrorMessages.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		41B9743523CD24CC00C60674 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				41B973BA23C5DDF800C60674 /* AppDelegate.swift */,
+				41B973BC23C5DDF800C60674 /* SceneDelegate.swift */,
+				41B973C623C5DDF900C60674 /* Assets.xcassets */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,10 +366,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41B973BF23C5DDF800C60674 /* ViewController.swift in Sources */,
+				41B973F423C5DEAD00C60674 /* ErrorMessages.swift in Sources */,
+				41B9740B23C5E7D500C60674 /* Constants.swift in Sources */,
+				41B9742B23CBEF6300C60674 /* FlowLayoutHelper.swift in Sources */,
+				41B9742D23CCCD2500C60674 /* UIImageView+Ext.swift in Sources */,
+				41B9743323CD21F300C60674 /* AlertView.swift in Sources */,
+				41B9741923C5EC4000C60674 /* Items.swift in Sources */,
+				41B9742723C624AC00C60674 /* DetailVC.swift in Sources */,
 				41B973BB23C5DDF800C60674 /* AppDelegate.swift in Sources */,
+				41B973F223C5DE6D00C60674 /* NetworkManager.swift in Sources */,
+				41B9741D23C5EE2500C60674 /* Collection.swift in Sources */,
 				41B973BD23C5DDF800C60674 /* SceneDelegate.swift in Sources */,
 				41B973C523C5DDF800C60674 /* NASAPhotos.xcdatamodeld in Sources */,
+				41B9740923C5E7B100C60674 /* URLBuilder.swift in Sources */,
+				41B973FA23C5E38E00C60674 /* GCD.swift in Sources */,
+				41B973F023C5DE6500C60674 /* PhotoCell.swift in Sources */,
+				41B9742123C5F10D00C60674 /* Links.swift in Sources */,
+				41B9741F23C5EFB100C60674 /* Data.swift in Sources */,
+				41B9741B23C5ED0D00C60674 /* Base.swift in Sources */,
+				41B9742923CB9A0500C60674 /* ViewController.swift in Sources */,
+				41B973F623C5DEFE00C60674 /* ItemImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +561,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3NA78F3F7G;
 				INFOPLIST_FILE = NASAPhotos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -448,7 +569,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sean.NASAPhotos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -459,6 +580,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3NA78F3F7G;
 				INFOPLIST_FILE = NASAPhotos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -466,7 +588,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sean.NASAPhotos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xJs-YP-v42">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--DetailVC-->
+        <scene sceneID="ird-Pu-jWB">
+            <objects>
+                <viewController storyboardIdentifier="DetailVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GH4-Mx-bTK" customClass="DetailVC" customModule="NASAPhotos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0BJ-rL-xgo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Z6C-4j-JdL">
+                                <rect key="frame" x="20" y="498.5" width="374" height="27.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text=" " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9tz-jH-aNy">
+                                <rect key="frame" x="20" y="525" width="374" height="337"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5cJ-f6-6Vp">
+                                <rect key="frame" x="20" y="44" width="374" height="388.5"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photo Credit:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFL-HZ-mwR">
+                                <rect key="frame" x="20" y="438" width="84.5" height="21"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Italic" family="Avenir Next" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="KAm-lQ-kQw">
+                                <rect key="frame" x="112.5" y="438" width="64.5" height="21"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Italic" family="Avenir Next" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abi-fP-Nre">
+                                <rect key="frame" x="185" y="438" width="58" height="21"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Italic" family="Avenir Next" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="tel-Yr-cC8">
+                                <rect key="frame" x="251" y="438" width="143" height="21"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Italic" family="Avenir Next" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="5cJ-f6-6Vp" firstAttribute="top" secondItem="30T-PL-FCJ" secondAttribute="top" id="0UB-BV-gac"/>
+                            <constraint firstItem="abi-fP-Nre" firstAttribute="top" secondItem="HFL-HZ-mwR" secondAttribute="bottom" constant="-21" id="20W-5l-ovn"/>
+                            <constraint firstItem="30T-PL-FCJ" firstAttribute="bottom" secondItem="KAm-lQ-kQw" secondAttribute="bottom" constant="403" id="5uI-he-fPG"/>
+                            <constraint firstItem="9tz-jH-aNy" firstAttribute="top" secondItem="Z6C-4j-JdL" secondAttribute="bottom" constant="-1" id="8RA-a0-F5l"/>
+                            <constraint firstItem="Z6C-4j-JdL" firstAttribute="leading" secondItem="30T-PL-FCJ" secondAttribute="leading" constant="20" id="BpQ-hS-mtd"/>
+                            <constraint firstItem="30T-PL-FCJ" firstAttribute="trailing" secondItem="5cJ-f6-6Vp" secondAttribute="trailing" constant="20" id="DP4-8i-Den"/>
+                            <constraint firstItem="5cJ-f6-6Vp" firstAttribute="leading" secondItem="30T-PL-FCJ" secondAttribute="leading" constant="20" id="DP6-vG-f0T"/>
+                            <constraint firstItem="30T-PL-FCJ" firstAttribute="bottom" secondItem="Z6C-4j-JdL" secondAttribute="bottom" constant="336" id="EeR-5U-F74"/>
+                            <constraint firstItem="HFL-HZ-mwR" firstAttribute="top" secondItem="9tz-jH-aNy" secondAttribute="bottom" constant="-424" id="GH1-Zb-NfP"/>
+                            <constraint firstItem="tel-Yr-cC8" firstAttribute="leading" secondItem="abi-fP-Nre" secondAttribute="trailing" constant="8" id="GJk-Xf-VZd"/>
+                            <constraint firstItem="Z6C-4j-JdL" firstAttribute="top" secondItem="5cJ-f6-6Vp" secondAttribute="bottom" constant="66" id="Msp-JO-6ET"/>
+                            <constraint firstItem="9tz-jH-aNy" firstAttribute="leading" secondItem="30T-PL-FCJ" secondAttribute="leading" constant="20" id="QsE-m3-sZ5"/>
+                            <constraint firstItem="30T-PL-FCJ" firstAttribute="bottom" secondItem="abi-fP-Nre" secondAttribute="bottom" constant="403" id="UJb-VD-pV5"/>
+                            <constraint firstItem="KAm-lQ-kQw" firstAttribute="leading" secondItem="HFL-HZ-mwR" secondAttribute="trailing" constant="8" id="URB-M1-3ed"/>
+                            <constraint firstItem="30T-PL-FCJ" firstAttribute="bottom" secondItem="tel-Yr-cC8" secondAttribute="bottom" constant="403" id="XvP-cj-EQo"/>
+                            <constraint firstItem="30T-PL-FCJ" firstAttribute="trailing" secondItem="9tz-jH-aNy" secondAttribute="trailing" constant="20" id="Zz6-5u-q2e"/>
+                            <constraint firstItem="abi-fP-Nre" firstAttribute="leading" secondItem="30T-PL-FCJ" secondAttribute="leading" constant="185" id="aas-Bd-0gL"/>
+                            <constraint firstItem="tel-Yr-cC8" firstAttribute="leading" secondItem="abi-fP-Nre" secondAttribute="trailing" constant="8" id="cEg-lS-o6b"/>
+                            <constraint firstItem="30T-PL-FCJ" firstAttribute="trailing" secondItem="Z6C-4j-JdL" secondAttribute="trailing" constant="20" id="e8r-Sb-T1S"/>
+                            <constraint firstItem="30T-PL-FCJ" firstAttribute="bottom" secondItem="9tz-jH-aNy" secondAttribute="bottom" id="fcN-cl-l3a"/>
+                            <constraint firstItem="HFL-HZ-mwR" firstAttribute="leading" secondItem="30T-PL-FCJ" secondAttribute="leading" constant="20" id="hL5-vW-7dV"/>
+                            <constraint firstItem="30T-PL-FCJ" firstAttribute="bottom" secondItem="HFL-HZ-mwR" secondAttribute="bottom" constant="403" id="hXB-xt-rRY"/>
+                            <constraint firstItem="KAm-lQ-kQw" firstAttribute="top" secondItem="9tz-jH-aNy" secondAttribute="bottom" constant="-424" id="ikE-V3-VLp"/>
+                            <constraint firstItem="KAm-lQ-kQw" firstAttribute="leading" secondItem="HFL-HZ-mwR" secondAttribute="trailing" constant="8" id="kqj-7I-36x"/>
+                            <constraint firstItem="30T-PL-FCJ" firstAttribute="trailing" secondItem="tel-Yr-cC8" secondAttribute="trailing" constant="20" id="qyb-wM-CU0"/>
+                            <constraint firstItem="30T-PL-FCJ" firstAttribute="trailing" secondItem="KAm-lQ-kQw" secondAttribute="trailing" constant="237" id="s5Z-2C-gZ9"/>
+                            <constraint firstItem="tel-Yr-cC8" firstAttribute="top" secondItem="HFL-HZ-mwR" secondAttribute="bottom" constant="-21" id="vLx-9g-WNM"/>
+                            <constraint firstItem="tel-Yr-cC8" firstAttribute="leading" secondItem="abi-fP-Nre" secondAttribute="trailing" constant="8" id="yJH-rv-YSJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="30T-PL-FCJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ATh-VO-UJW"/>
+                    <connections>
+                        <outlet property="descriptionTextView" destination="9tz-jH-aNy" id="DnF-7p-0C9"/>
+                        <outlet property="imageView" destination="5cJ-f6-6Vp" id="5bE-z4-gZT"/>
+                        <outlet property="locationLabel" destination="tel-Yr-cC8" id="afa-kX-IyY"/>
+                        <outlet property="photoCreditLabel" destination="KAm-lQ-kQw" id="v6G-de-FxY"/>
+                        <outlet property="titleLabel" destination="Z6C-4j-JdL" id="wVf-Qv-Oqf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oIw-z0-Je2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5147.826086956522" y="105.80357142857143"/>
+        </scene>
+        <!--NASA Photos-->
+        <scene sceneID="gcX-Fd-Oaf">
+            <objects>
+                <viewController id="vFX-hz-03i" customClass="ViewController" customModule="NASAPhotos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yn6-1M-YAV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="WFl-4O-oXl">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="f0I-3K-TNi">
+                                    <size key="itemSize" width="103" height="100"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="cellid" reuseIdentifier="cellid" id="6hb-ld-OW6" customClass="PhotoCell" customModule="NASAPhotos" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="103" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="RCE-FL-4uj">
+                                            <rect key="frame" x="0.0" y="0.0" width="103" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="103" height="100"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="tt4-8I-xtc">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="WFl-4O-oXl" firstAttribute="leading" secondItem="rHt-yx-tue" secondAttribute="leading" id="Ea3-28-NPL"/>
+                            <constraint firstItem="WFl-4O-oXl" firstAttribute="top" secondItem="rHt-yx-tue" secondAttribute="top" id="TmA-oF-Adl"/>
+                            <constraint firstItem="rHt-yx-tue" firstAttribute="trailing" secondItem="WFl-4O-oXl" secondAttribute="trailing" id="Xep-zU-8uq"/>
+                            <constraint firstItem="tt4-8I-xtc" firstAttribute="centerY" secondItem="yn6-1M-YAV" secondAttribute="centerY" id="cxR-Re-8cf"/>
+                            <constraint firstItem="tt4-8I-xtc" firstAttribute="centerX" secondItem="yn6-1M-YAV" secondAttribute="centerX" id="hg5-ix-z5I"/>
+                            <constraint firstItem="rHt-yx-tue" firstAttribute="bottom" secondItem="WFl-4O-oXl" secondAttribute="bottom" id="l8p-z4-NY2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rHt-yx-tue"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="NASA Photos" largeTitleDisplayMode="always" id="duW-3k-foH"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="tt4-8I-xtc" id="wXJ-Ts-sr5"/>
+                        <outlet property="collectionView" destination="WFl-4O-oXl" id="oUD-Vi-uJn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ThR-tL-577" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4471.0144927536239" y="106.47321428571428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="F9L-Ud-VK0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xJs-YP-v42" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ypj-10-FGT">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vFX-hz-03i" kind="relationship" relationship="rootViewController" id="RK5-tl-lfT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IHz-VV-VQi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3757" y="106"/>
+        </scene>
+    </scenes>
+</document>
